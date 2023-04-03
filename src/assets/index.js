@@ -1,5 +1,4 @@
 import logo from "./logo.png";
-import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import smile from "./smile.png";
@@ -11,6 +10,7 @@ import graduation from "./graduation.png"
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
+import github from "./tech/github.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import nodejs from "./tech/nodejs.png";

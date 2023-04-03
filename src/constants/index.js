@@ -6,6 +6,7 @@ import {
   tailwind,
   nodejs,
   git,
+  github,
 
   network,
   closed,
@@ -90,52 +91,52 @@ const technologies = [
   {
     name: "HTML 5",
     icon: html,
-    skill: "excellent",
+    rating: 5,
   },
   {
     name: "CSS 3",
     icon: css,
-    skill: "excellent",
+    rating: 5,
   },
   {
     name: "JavaScript",
     icon: javascript,
-    skill: "good",
+    rating: 4,
   },
   {
     name: "Jquery",
     icon: jquery,
-    skill: "excellent",
+    rating: 4.5,
+  },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
+    rating: 4.5,
   },
   {
     name: "JSP",
     icon: jsp,
-    skill: "good",
+    rating: 3,
   },
   {
     name: "React",
     icon: reactjs,
-    skill: "normal",
+    rating: 2,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
-    skill: "normal",
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-    skill: "normal",
-  },
-  {
-    name: "MariaDB",
-    icon: mariadb,
-    skill: "normal",
+    rating: 3.5,
   },
   {
     name: "SVN",
     icon: svn,
-    skill: "good",
+    rating: 4,
+  },
+  {
+    name: "Github",
+    icon: github,
+    rating: 2.5,
   },
 ];
 

@@ -3,6 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import { BrowserView, isMobile } from "react-device-detect";
 import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
@@ -11,7 +12,7 @@ import { styles } from "../styles";
 import { timelines } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { EarthCanvas } from "./canvas";
-import { textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ timeline }) => {
   return (
@@ -73,8 +74,13 @@ const Experience = () => {
       </motion.div>
 
       <div className="mt-20 flex flex-col">
-        <EarthCanvas />
+        <BrowserView>
+          <motion.div variants={fadeIn("up", "spring", 0.3, 0.6)}>
+            <EarthCanvas />
+          </motion.div>
+        </BrowserView>
         <VerticalTimeline
+          animate={isMobile ? false : true}
           className={"timeline"}
         >
           {timelines.map((timeline, index) => (

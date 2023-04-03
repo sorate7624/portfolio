@@ -1,5 +1,6 @@
+import { isMobile } from "react-device-detect";
 export const textVariant = (delay) => {
-  return {
+  return isMobile ? "" : {
     hidden: {
       y: -50,
       opacity: 0,
@@ -17,7 +18,7 @@ export const textVariant = (delay) => {
 };
 
 export const fadeIn = (direction, type, delay, duration) => {
-  return {
+  return isMobile ? "" : {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
       y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
@@ -38,7 +39,7 @@ export const fadeIn = (direction, type, delay, duration) => {
 };
 
 export const zoomIn = (delay, duration) => {
-  return {
+  return isMobile ? "" : {
     hidden: {
       scale: 0,
       opacity: 0,
@@ -57,7 +58,7 @@ export const zoomIn = (delay, duration) => {
 };
 
 export const slideIn = (direction, type, delay, duration) => {
-  return {
+  return isMobile ? "" : {
     hidden: {
       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
       y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
@@ -76,7 +77,7 @@ export const slideIn = (direction, type, delay, duration) => {
 };
 
 export const staggerContainer = (staggerChildren, delayChildren) => {
-  return {
+  return isMobile ? "" : {
     hidden: {},
     show: {
       transition: {

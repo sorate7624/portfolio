@@ -1,8 +1,6 @@
-import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import { optolane } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
@@ -16,7 +14,7 @@ const ProjectCard = ({
   image,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.3, 0.6)}>
       <div
         className="flex flex-col p-5 rounded-2xl sm:w-[350px] max-w-xs w-full h-[430px] purple-bg-opacity"
       >
