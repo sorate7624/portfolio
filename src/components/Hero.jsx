@@ -1,3 +1,4 @@
+import { BrowserView, isMobile } from "react-device-detect";
 import { motion } from "framer-motion";
 import { fadeIn, slideIn, textVariant } from "../utils/motion";
 
@@ -11,8 +12,7 @@ const Hero = () => {
         className={`absolute inset-0 top-2/4 -translate-y-1/2 max-w-7xl mx-auto ${styles.paddingX} flex flex-col flex-wrap items-start gap-5`}
       >
         <>
-    <motion.div variants={fadeIn("up", "spring", 0.3, 0.6)}>
-
+        <motion.div variants={fadeIn("up", "spring", 0.3, 0.6)}>
           <p className={styles.sectionSubText}>Frontend Developer</p>
           <h1 className={`${styles.heroHeadText} text-white`}>
             안녕하세요. 
@@ -22,7 +22,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           책임감을 가지고 모든 일에 최선을 다하도록 하겠습니다.
           </p>
-          </motion.div>
+        </motion.div>
         </>
 
         <div className="flex flex-row items-center mt-5 w-full">
@@ -46,7 +46,9 @@ const Hero = () => {
           />
         </div>
       </div>
+      <BrowserView>
         <StarsCanvas/>
+      </BrowserView>
     </section>
   );
 };
