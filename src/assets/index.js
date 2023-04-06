@@ -8,22 +8,22 @@ import location from "./location.png";
 import email from "./email.png";
 import graduation from "./graduation.png"
 
-import css from "../../public/tech/css.png";
-import git from "../../public/tech/git.png";
-import github from "../../public/tech/github.png";
-import html from "../../public/tech/html.png";
-import javascript from "../../public/tech/javascript.png";
-import nodejs from "../../public/tech/nodejs.png";
-import reactjs from "../../public/tech/reactjs.png";
-import tailwind from "../../public/tech/tailwind.png";
+import css from "./tech/css.png";
+import git from "./tech/git.png";
+import github from "./tech/github.png";
+import html from "./tech/html.png";
+import javascript from "./tech/javascript.png";
+import nodejs from "./tech/nodejs.png";
+import reactjs from "./tech/reactjs.png";
+import tailwind from "./tech/tailwind.png";
 
-import jquery from "../../public/tech/jquery.png";
-import jsp from "../../public/tech/jsp.png";
-import bootstrap from "../../public/tech/bootstrap.png";
-import scss from "../../public/tech/scss.png";
-import mariadb from "../../public/tech/mariadb.png";
-import tomcat from "../../public/tech/tomcat.png";
-import svn from "../../public/tech/svn.png";
+import jquery from "./tech/jquery.png";
+import jsp from "./tech/jsp.png";
+import bootstrap from "./tech/bootstrap.png";
+import scss from "./tech/scss.png";
+import mariadb from "./tech/mariadb.png";
+import tomcat from "./tech/tomcat.png";
+import svn from "./tech/svn.png";
 
 import inu from "./company/inu.png";
 import hrdk from "./company/hrdk.png";
