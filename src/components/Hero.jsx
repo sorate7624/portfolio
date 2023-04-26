@@ -17,7 +17,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             안녕하세요. 
             <br/>
-            프론트엔드 개발자 <span className="text-pastel-purple">최혜진</span>입니다.
+            웹 퍼블리셔, 프론트엔드 개발자 <span className="text-pastel-purple">최혜진</span>입니다.
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           책임감을 가지고 모든 일에 최선을 다하도록 하겠습니다.
