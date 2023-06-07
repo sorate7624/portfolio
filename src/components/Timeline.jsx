@@ -1,35 +1,35 @@
-import React from "react";
+import React from 'react';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import { BrowserView, isMobile } from "react-device-detect";
-import { motion } from "framer-motion";
+} from 'react-vertical-timeline-component';
+import { BrowserView, isMobile } from 'react-device-detect';
+import { motion } from 'framer-motion';
 
-import "react-vertical-timeline-component/style.min.css";
+import 'react-vertical-timeline-component/style.min.css';
 
-import { styles } from "../styles";
-import { timelines } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { EarthCanvas } from "./canvas";
-import { fadeIn, textVariant } from "../utils/motion";
+import { styles } from '../styles';
+import { timelines } from '../constants';
+import { SectionWrapper } from '../hoc';
+import { EarthCanvas } from './canvas';
+import { fadeIn, textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ timeline }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#141414",
-        color: "#fff",
-        border: "1px solid #b399d4",
-        boxShadow: "none",
-        borderRadius: "1rem"
+        background: '#141414',
+        color: '#fff',
+        border: '2px solid #576CBC',
+        boxShadow: 'none',
+        borderRadius: '1rem',
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #b399d4" }}
+      contentArrowStyle={{ borderRight: '7px solid  #576CBC' }}
       date={timeline.date}
-      iconStyle={{ 
+      iconStyle={{
         background: timeline.iconBg,
-        boxShadow: "none",
-        border: "4px solid #b399d4"
+        boxShadow: 'none',
+        border: '4px solid #576CBC',
       }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
@@ -44,7 +44,7 @@ const ExperienceCard = ({ timeline }) => {
       <div>
         <h3 className="text-white text-[24px] font-bold">{timeline.title}</h3>
         <p
-          className="text-purple text-[16px] font-semibold"
+          className="text-pastel-skyblue text-[16px] font-bold"
           style={{ margin: 0 }}
         >
           {timeline.company_name}
@@ -75,13 +75,13 @@ const Experience = () => {
 
       <div className="mt-20 flex flex-col">
         <BrowserView>
-          <motion.div variants={fadeIn("up", "spring", 0.3, 0.6)}>
+          <motion.div variants={fadeIn('up', 'spring', 0.3, 0.6)}>
             <EarthCanvas />
           </motion.div>
         </BrowserView>
         <VerticalTimeline
           animate={isMobile ? false : true}
-          className={"timeline"}
+          className={'timeline'}
         >
           {timelines.map((timeline, index) => (
             <ExperienceCard key={index} timeline={timeline} />
@@ -92,4 +92,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "timeline");
+export default SectionWrapper(Experience, 'timeline');

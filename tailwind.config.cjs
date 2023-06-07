@@ -14,6 +14,10 @@ module.exports = {
         "purple": "#804dee",
         "pastel-purple": "#b399d4",
         "pink": "#f5e1fd",
+        "navy": "#0B2447",
+        "pastel-navy": "#19376D",
+        "sea-blue": "#576CBC",
+        "pastel-skyblue": "#A5D7E8",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",

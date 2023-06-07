@@ -8,6 +8,10 @@ body {
   --purple: #804dee;
   --pastel-purple: #b399d4;
   --pink: #f5e1fd;
+  --navy: #0B2447;
+  --pastel-navy: #19376D;
+  --sea-blue: #576CBC;
+  --pastel-skyblue: #A5D7E8;
   --black-color: #141414;
   background-color: var(--black-color);
 }
@@ -74,6 +78,10 @@ body {
 
 .purple-gradient-border {
   background: linear-gradient(var(--pastel-purple), var(--purple));
+}
+
+.blue-gradient-border {
+  background: linear-gradient(var(--sea-blue), var(--pastel-navy));
 }
 
 .green-pink-gradient {
@@ -168,6 +176,26 @@ body {
   color: #7dc426;
 }
 
+.react-text {
+  color: #00D8FE;
+}
+
+.typescript-text {
+  color: #3077C6;
+}
+
+.vite-text {
+  color: #F1BE24;
+}
+
+.tailwind-text {
+  color: #1BABBA;
+}
+
+.styled-text {
+  color: #D770B0;
+}
+
 .purple-border {
   border-color: var(--purple);
 }
@@ -205,6 +233,10 @@ body {
   color: var(--pink);
 }
 
+.skyblue-color {
+  color: var(--pastel-skyblue);
+}
+
 .pink-border {
   border-color: var(--pink);
 }
@@ -214,11 +246,11 @@ body {
 }
 
 .timeline::before {
-  background-color: var(--pastel-purple);
+  background-color: var(--sea-blue);
 }
 
 .icon-filter {
-  filter: opacity(0.5) drop-shadow(0 0 0 var(--purple));
+  filter: opacity(0.5) drop-shadow(0 0 0 blue);
 }
 
 .scroll-top {

@@ -19,9 +19,9 @@ import tailwind from "./tech/tailwind.png";
 
 import jquery from "./tech/jquery.png";
 import jsp from "./tech/jsp.png";
-import bootstrap from "./tech/bootstrap.png";
+import typescript from "./tech/typescript.png";
+import styled from "./tech/styled-components.png";
 import scss from "./tech/scss.png";
-import mariadb from "./tech/mariadb.png";
 import tomcat from "./tech/tomcat.png";
 import svn from "./tech/svn.png";
 
@@ -31,10 +31,10 @@ import optolane from "./company/optolane.png";
 
 import network from "./network.png";
 import closed from "./closed.png";
-import cruise from "./cruise.png";
 import doctor from "./doctor.png";
-import license from "./license.png";
-import analyzer from "./analyzer.png";
+import quotes from "./quotes.png";
+import recipe from "./recipe.png";
+import city from "./city.png";
 
 export {
   logo,
@@ -51,9 +51,9 @@ export {
 
   jquery,
   jsp,
-  bootstrap,
+  typescript,
+  styled,
   scss,
-  mariadb,
   tomcat,
   svn,
 
@@ -69,8 +69,8 @@ export {
 
   network,
   closed,
-  cruise,
   doctor,
-  license,
-  analyzer,
+  quotes,
+  recipe,
+  city,
 };

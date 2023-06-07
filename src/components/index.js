@@ -1,20 +1,20 @@
 import { EarthCanvas, BallCanvas, StarsCanvas } from './canvas';
-import Hero from "./Hero";
+import Home from "./Home";
 import Navbar from "./Navbar";
 import About from "./About";
 import Timeline from "./Timeline";
-import Career from "./Career";
+import Project from "./Project";
 import Skill from "./Skill";
 import CanvasLoader from "./Loader";
 
 
 export {
-  Hero,
+  Home,
   Navbar,
   About,
   Skill,
   Timeline,
-  Career,
+  Project,
   CanvasLoader,
   EarthCanvas, 
   BallCanvas, 

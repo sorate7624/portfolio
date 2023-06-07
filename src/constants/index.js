@@ -10,17 +10,15 @@ import {
 
   network,
   closed,
-  cruise,
   doctor,
-  license,
-  analyzer,
+  quotes,
+  recipe,
+  city,
 
   jquery,
   jsp,
-  bootstrap,
-  scss,
-  mariadb,
-  tomcat,
+  typescript,
+  styled,
   svn,
 
   inu,
@@ -35,8 +33,7 @@ import {
   graduation
 } from "../assets";
 
-export const navLinks = [
-  {
+export const navLinks = [{
     id: "about",
     title: "About me",
   },
@@ -49,13 +46,12 @@ export const navLinks = [
     title: "Timeline",
   },
   {
-    id: "career",
-    title: "Career",
+    id: "project",
+    title: "Project",
   },
 ];
 
-const services = [
-  {
+const services = [{
     title: "이름",
     text: "최혜진",
     icon: smile,
@@ -87,8 +83,7 @@ const services = [
   },
 ];
 
-const technologies = [
-  {
+const technologies = [{
     name: "HTML 5",
     icon: html,
     rating: 5,
@@ -99,7 +94,7 @@ const technologies = [
     rating: 5,
   },
   {
-    name: "JavaScript",
+    name: "Javascript",
     icon: javascript,
     rating: 4,
   },
@@ -109,19 +104,19 @@ const technologies = [
     rating: 4.5,
   },
   {
-    name: "Bootstrap",
-    icon: bootstrap,
-    rating: 4.5,
-  },
-  {
-    name: "JSP",
-    icon: jsp,
-    rating: 3,
+    name: "SVN",
+    icon: svn,
+    rating: 4,
   },
   {
     name: "React",
     icon: reactjs,
-    rating: 2,
+    rating: 3.5,
+  },
+  {
+    name: "Typescript",
+    icon: typescript,
+    rating: 3,
   },
   {
     name: "Tailwind CSS",
@@ -129,19 +124,18 @@ const technologies = [
     rating: 3.5,
   },
   {
-    name: "SVN",
-    icon: svn,
-    rating: 4,
+    name: "Styled component",
+    icon: styled,
+    rating: 3,
   },
   {
     name: "Github",
     icon: github,
-    rating: 2.5,
+    rating: 3.5,
   },
 ];
 
-const timelines = [
-  {
+const timelines = [{
     title: "University",
     company_name: "인천대학교",
     icon: inu,
@@ -178,26 +172,22 @@ const timelines = [
   }
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+const testimonials = [{
+    testimonial: "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -205,13 +195,11 @@ const testimonials = [
   },
 ];
 
-const projects = [
-  {
+const projects = [{
     name: "Network Web App",
-    description:
-      "검사 장비와 웹을 연동하여 데이터를 확인하는 웹 어플리케이션 입니다. 비교적 디스플레이가 작은 검사 장비에 대한 데이터들을 웹을 통해 결과 확인 및 분석을 할 수 있습니다.",
-    tags: [
-      {
+    url: "https://portal.optolane.com/welcome",
+    description: "검사 장비와 웹을 연동하여 데이터를 확인하는 웹 어플리케이션 입니다. 검사 결과 데이터의 목록 보기, 카드 보기, 차트 보기를 템플릿 형태로 구현하였고 pdf 미리보기 및 다운로드 기능 등을 구현하였습니다.",
+    tags: [{
         name: "html",
         color: "html-text",
       },
@@ -233,33 +221,33 @@ const projects = [
       },
       {
         name: "ajax",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
       {
         name: "highchart",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
       {
         name: "ftl",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
       {
         name: "fullPage",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
       {
         name: "jspdf",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
     ],
     image: network,
+    git: false,
   },
   {
     name: "Closed Web App",
-    description:
-      "인터넷이 되지 않는 환경에서 장비와 연동하여 데이터를 확인하는 웹 어플리케이션 입니다. 실시간 검사에 대한 결과를 목록화하고 필터링 기능을 통해 좀 더 편리하게 데이터를 분석할 수 있습니다.",
-    tags: [
-      {
+    url: "https://portal.optolane.com",
+    description: "인터넷이 되지 않는 환경에서 장비와 연동하여 데이터를 확인하는 웹 어플리케이션 입니다. 실시간 검사에 대한 결과를 다국어, 목록화, 필터링, 상세보기, pdf 다운로드 기능 등을 구현하였습니다.",
+    tags: [{
         name: "html",
         color: "html-text",
       },
@@ -281,73 +269,33 @@ const projects = [
       },
       {
         name: "axios",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
       {
         name: "tui grid",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
       {
         name: "i18n",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
       {
         name: "cyber security",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
       {
         name: "xlsx",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
     ],
     image: closed,
-  },
-  {
-    name: "Cruise Web App",
-    description:
-      "크루즈 탑승객들의 데이터를 확인하는 웹 어플리케이션 입니다. 크루즈 탑승객들이 모바일 앱으로 스캔한 바코드를 통해 검사 준비, 진행, 완료 단계를 실시간으로 확인할 수 있습니다.",
-    tags: [
-      {
-        name: "html",
-        color: "html-text",
-      },
-      {
-        name: "css",
-        color: "css-text",
-      },
-      {
-        name: "javascript",
-        color: "javascript-text",
-      },
-      {
-        name: "jquery",
-        color: "jquery-text",
-      },
-      {
-        name: "jsp",
-        color: "jsp-text",
-      },
-      {
-        name: "ajax",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "tabulator",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "fcm web push",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: cruise,
+    git: false,
   },
   {
     name: "Doctor Web App",
-    description:
-      "의사 판정이 필요한 데이터에 대한 웹 어플리케이션 입니다. 의사가 검사가 완료된 데이터를 분석하여 결과를 판정할 수 있습니다.",
-    tags: [
-      {
+    url: "https://portal.optolane.com/doctor/login",
+    description: "의사 판정이 필요한 데이터에 대한 웹 어플리케이션 입니다. 검사 결과에 대한 목록화, 상세보기, 중복 선택 방지, 마이페이지, 모바일 UI  기능 등을 구현하였습니다.",
+    tags: [{
         name: "html",
         color: "html-text",
       },
@@ -369,95 +317,139 @@ const projects = [
       },
       {
         name: "ajax",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
       {
         name: "handlebar",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
       {
         name: "mobile",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
       {
         name: "bootstrap",
-        color: "pink-text-gradient",
+        color: "skyblue-color",
       },
     ],
     image: doctor,
+    git: false,
   },
   {
-    name: "License Web App",
-    description:
-      "제품의 라이선스에 대한 관리 웹 어플리케이션 입니다. 관리자가 제품에 대한 라이선스 발급, 관리, 로그를 관리합니다.",
-    tags: [
-      {
-        name: "html",
-        color: "html-text",
+    name: "Random life quotes",
+    url: "https://github.com/sorate7624/life-quotes",
+    description: "랜덤으로 명언을 제조하는 웹 사이트 입니다. 무료로 제공하는 api를 사용하여 비동기 호출을 사용하였습니다. 한국어로 번역하고 텍스트 타이핑 기능을 추가하였습니다.",
+    tags: [{
+        name: "react",
+        color: "react-text",
       },
       {
-        name: "css",
-        color: "css-text",
+        name: "react hooks",
+        color: "react-text",
       },
       {
-        name: "javascript",
-        color: "javascript-text",
+        name: "typescript",
+        color: "typescript-text",
       },
       {
-        name: "jquery",
-        color: "jquery-text",
+        name: "tailwind css",
+        color: "tailwind-text",
       },
       {
-        name: "ajax",
-        color: "pink-text-gradient",
+        name: "vite",
+        color: "vite-text",
       },
       {
-        name: "tabulator",
-        color: "pink-text-gradient",
+        name: "async/await",
+        color: "skyblue-color",
       },
       {
-        name: "bootstrap",
-        color: "pink-text-gradient",
+        name: "translate",
+        color: "skyblue-color",
+      },
+      {
+        name: "react-type-animation",
+        color: "skyblue-color",
       },
     ],
-    image: license,
+    image: quotes,
+    git: true,
   },
   {
-    name: "Analyzer Desktop App",
-    description:
-      "검사 장비와 웹을 연동하여 데이터를 확인하는 웹 어플리케이션 입니다. 실시간으로 검사 결과 확인, 분석, 제어를 할 수 있습니다.",
-    tags: [
-      {
-        name: "html",
-        color: "html-text",
+    name: "Korean food recipe",
+    url: "https://github.com/sorate7624/korean-food-recipe",
+    description: "한식 레시피를 검색할 수 있는 웹 사이트 입니다. 무료 api의 렌더링 속도가 느려서 json파일로 저장하여 사용하였습니다. 검색 기능, 필터 기능, 상세보기 기능을 추가하였습니다.",
+    tags: [{
+        name: "react",
+        color: "react-text",
       },
       {
-        name: "css",
-        color: "css-text",
+        name: "react hooks",
+        color: "react-text",
       },
       {
-        name: "javascript",
-        color: "javascript-text",
+        name: "tailwind css",
+        color: "tailwind-text",
       },
       {
-        name: "vue",
-        color: "vue-text",
+        name: "vite",
+        color: "vite-text",
       },
       {
-        name: "node",
-        color: "node-text",
+        name: "async/await",
+        color: "skyblue-color",
       },
       {
-        name: "socketIO",
-        color: "pink-text-gradient",
+        name: "lazy image",
+        color: "skyblue-color",
       },
       {
-        name: "virtual keyboard",
-        color: "pink-text-gradient"
+        name: "carousel",
+        color: "skyblue-color",
       },
     ],
-    image: analyzer,
+    image: recipe,
+    git: true,
+  },
+  {
+    name: "City demographics",
+    url: "https://github.com/sorate7624/city-demographics",
+    description: "도시별 인구 통계를 확인할 수 있는 웹 사이트 입니다. 무료 api를 사용하되, 주기적으로 변경되는 토큰 값을 호출하여 사용하였습니다. 셀렉트의 종류에 따라 그래프의 종류를 3가지로 다르게 표현해봤습니다.",
+    tags: [
+      {
+        name: "react",
+        color: "react-text",
+      },
+      {
+        name: "react hooks",
+        color: "react-text",
+      },
+      {
+        name: "styled-components",
+        color: "styled-text",
+      },
+      {
+        name: "vite",
+        color: "vite-text",
+      },
+      {
+        name: "axios",
+        color: "skyblue-color",
+      },
+      {
+        name: "react-chartjs-2",
+        color: "skyblue-color",
+      },
+    ],
+    image: city,
+    git: true,
   },
 ];
 
-export { services, technologies, timelines, testimonials, projects };
+export {
+  services,
+  technologies,
+  timelines,
+  testimonials,
+  projects
+};
