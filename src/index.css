@@ -8,10 +8,10 @@ body {
   --purple: #804dee;
   --pastel-purple: #b399d4;
   --pink: #f5e1fd;
-  --navy: #0B2447;
-  --pastel-navy: #19376D;
-  --sea-blue: #576CBC;
-  --pastel-skyblue: #A5D7E8;
+  --navy: #0b2447;
+  --pastel-navy: #19376d;
+  --sea-blue: #576cbc;
+  --pastel-skyblue: #a5d7e8;
   --black-color: #141414;
   background-color: var(--black-color);
 }
@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
@@ -34,46 +34,42 @@ body {
 .black-gradient {
   background: #000000;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,
-      #434343,
-      #000000);
+  background: -webkit-linear-gradient(to right, #434343, #000000);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,
-      #434343,
-      #000000);
+  background: linear-gradient(to right, #434343, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .violet-gradient {
   background: var(--purple);
-  background: linear-gradient(-90deg, var(--purple) 0%, rgba(60, 51, 80, 0) 100%);
-  background: -webkit-linear-gradient(-90deg,
-      var(--purple) 0%,
-      rgba(60, 51, 80, 0) 100%);
+  background: linear-gradient(
+    -90deg,
+    var(--purple) 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    -90deg,
+    var(--purple) 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
 }
 
 .white-gradient {
   background: #fff;
   background: linear-gradient(0deg, #fff 0%, rgba(60, 51, 80, 0) 100%);
-  background: -webkit-linear-gradient(0deg,
-      #fff 0%,
-      rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(0deg, #fff 0%, rgba(60, 51, 80, 0) 100%);
 }
 
 .pink-gradient {
   background: var(--pastel-purple);
-  background: -webkit-linear-gradient(var(--pink),
-      var(--pastel-purple));
-  background: linear-gradient(var(--pink),
-      var(--pastel-purple));
+  background: -webkit-linear-gradient(var(--pink), var(--pastel-purple));
+  background: linear-gradient(var(--pink), var(--pastel-purple));
 }
 
 .purple-gradient-bg {
   background: var(--purple);
-  background: -webkit-linear-gradient(var(--pink),
-      var(--purple));
-  background: linear-gradient(var(--pink),
-      var(--purple));
+  background: -webkit-linear-gradient(var(--pink), var(--purple));
+  background: linear-gradient(var(--pink), var(--purple));
 }
 
 .purple-gradient-border {
@@ -85,7 +81,7 @@ body {
 }
 
 .green-pink-gradient {
-  background: "#00cea8";
+  background: '#00cea8';
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
@@ -93,13 +89,9 @@ body {
 .orange-text-gradient {
   background: #f12711;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top,
-      #f12711,
-      #f5af19);
+  background: -webkit-linear-gradient(to top, #f12711, #f5af19);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top,
-      #f12711,
-      #f5af19);
+  background: linear-gradient(to top, #f12711, #f5af19);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -108,13 +100,9 @@ body {
 .green-text-gradient {
   background: #11998e;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top,
-      #11998e,
-      #38ef7d);
+  background: -webkit-linear-gradient(to top, #11998e, #38ef7d);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top,
-      #11998e,
-      #38ef7d);
+  background: linear-gradient(to top, #11998e, #38ef7d);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -124,13 +112,9 @@ body {
   /* background: -webkit-linear-gradient(#eee, #333); */
   background: #56ccf2;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top,
-      #2f80ed,
-      #56ccf2);
+  background: -webkit-linear-gradient(to top, #2f80ed, #56ccf2);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top,
-      #2f80ed,
-      #56ccf2);
+  background: linear-gradient(to top, #2f80ed, #56ccf2);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -138,12 +122,8 @@ body {
 
 .pink-text-gradient {
   background: #f5e1fd;
-  background: -webkit-linear-gradient(to top,
-      #f5e1fd,
-      #fff);
-  background: linear-gradient(to top,
-      #f5e1fd,
-      #fff);
+  background: -webkit-linear-gradient(to top, #f5e1fd, #fff);
+  background: linear-gradient(to top, #f5e1fd, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -157,7 +137,7 @@ body {
 }
 
 .jquery-text {
-  color: #0767ac
+  color: #0767ac;
 }
 
 .javascript-text {
@@ -177,23 +157,67 @@ body {
 }
 
 .react-text {
-  color: #00D8FE;
+  color: #00d8fe;
 }
 
 .typescript-text {
-  color: #3077C6;
+  color: #3077c6;
 }
 
 .vite-text {
-  color: #F1BE24;
+  color: #f1be24;
 }
 
 .tailwind-text {
-  color: #1BABBA;
+  color: #1babba;
 }
 
 .styled-text {
-  color: #D770B0;
+  color: #d770b0;
+}
+
+.react-query-text {
+  color: #fe4154;
+}
+
+.redux-text {
+  color: #764abc;
+}
+
+.scss-text {
+  color: #cc6699;
+}
+
+.ec2-text {
+  color: #ff9900;
+}
+
+.route53-text {
+  color: #f48536;
+}
+
+.docker-text {
+  color: #2496ed;
+}
+
+.animate-text {
+  color: #fce5cd;
+}
+
+.black-color {
+  color: #000000;
+}
+
+.react-router-text {
+  color: #ca4246;
+}
+
+.mongodb-text {
+  color: #47a248;
+}
+
+.typescript-text {
+  color: #3178c6;
 }
 
 .purple-border {
@@ -205,7 +229,7 @@ body {
 }
 
 .purple-bg-opacity {
-  background: rgba(128, 77, 238, .3);
+  background: rgba(128, 77, 238, 0.3);
 }
 
 .purple-color {
@@ -270,7 +294,6 @@ body {
 }
 
 @keyframes mulShdSpin {
-
   0%,
   100% {
     box-shadow: 0em -2.6em 0em 0em #ffffff,
