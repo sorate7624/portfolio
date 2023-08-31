@@ -21,9 +21,10 @@ import jquery from './tech/jquery.png';
 import jsp from './tech/jsp.png';
 import typescript from './tech/typescript.png';
 import styled from './tech/styled-components.png';
-import scss from './tech/scss.png';
 import tomcat from './tech/tomcat.png';
 import svn from './tech/svn.png';
+import nextjs from './tech/nextjs.png';
+import scss from './tech/scss.png';
 
 import inu from './company/inu.png';
 import hrdk from './company/hrdk.png';
@@ -55,9 +56,10 @@ export {
   jsp,
   typescript,
   styled,
-  scss,
   tomcat,
   svn,
+  nextjs,
+  scss,
   inu,
   hrdk,
   optolane,

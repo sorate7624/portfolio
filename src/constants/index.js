@@ -17,10 +17,10 @@ import {
   countryinfo,
   city,
   jquery,
-  jsp,
   typescript,
   styled,
-  svn,
+  nextjs,
+  scss,
   inu,
   hrdk,
   optolane,
@@ -86,6 +86,31 @@ const services = [
 
 const technologies = [
   {
+    name: 'React',
+    icon: reactjs,
+    rating: 3.5,
+  },
+  {
+    name: 'Typescript',
+    icon: typescript,
+    rating: 3.5,
+  },
+  {
+    name: 'Next.js',
+    icon: nextjs,
+    rating: 3,
+  },
+  {
+    name: 'SCSS',
+    icon: scss,
+    rating: 4,
+  },
+  {
+    name: 'Styled component',
+    icon: styled,
+    rating: 3.5,
+  },
+  {
     name: 'HTML 5',
     icon: html,
     rating: 5,
@@ -104,31 +129,6 @@ const technologies = [
     name: 'Jquery',
     icon: jquery,
     rating: 4.5,
-  },
-  {
-    name: 'SVN',
-    icon: svn,
-    rating: 4,
-  },
-  {
-    name: 'React',
-    icon: reactjs,
-    rating: 3.5,
-  },
-  {
-    name: 'Typescript',
-    icon: typescript,
-    rating: 3,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-    rating: 3.5,
-  },
-  {
-    name: 'Styled component',
-    icon: styled,
-    rating: 3,
   },
   {
     name: 'Github',
