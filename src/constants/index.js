@@ -139,22 +139,6 @@ const technologies = [
 
 const timelines = [
   {
-    title: 'University',
-    company_name: '인천대학교',
-    icon: inu,
-    iconBg: '#fff',
-    date: '2013.03 - 2018.02',
-    points: ['컴퓨터공학부 졸업'],
-  },
-  {
-    title: 'Certificate',
-    company_name: '자격증',
-    icon: hrdk,
-    iconBg: '#fff',
-    date: '2018.04 - 2018.06',
-    points: ['웹 디자인 기능사', '컴퓨터그래픽스운용기능사', '정보처리기사'],
-  },
-  {
     title: 'Career',
     company_name: '옵토레인',
     icon: optolane,
@@ -166,6 +150,22 @@ const timelines = [
       '문서 작성: User manual, Wireframe, Storyboard, Testcase, REST API',
       '유지보수: SVN 형상 관리, 코드 리뷰, 리뉴얼, 리팩토링 진행',
     ],
+  },
+  {
+    title: 'Certificate',
+    company_name: '자격증',
+    icon: hrdk,
+    iconBg: '#fff',
+    date: '2018.04 - 2018.06',
+    points: ['웹 디자인 기능사', '컴퓨터그래픽스운용기능사', '정보처리기사'],
+  },
+  {
+    title: 'University',
+    company_name: '인천대학교',
+    icon: inu,
+    iconBg: '#fff',
+    date: '2013.03 - 2018.02',
+    points: ['컴퓨터공학부 졸업'],
   },
 ];
 
