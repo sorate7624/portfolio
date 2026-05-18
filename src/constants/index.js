@@ -37,6 +37,7 @@ import {
   cls_main,
   sea_aug,
   actozsoft,
+  chatbot,
 } from "../assets";
 
 export const navLinks = [
@@ -333,7 +334,7 @@ const projects = [
         color: "jquery-text",
       },
     ],
-    image: network,
+    image: chatbot,
     act: true,
   },
   {

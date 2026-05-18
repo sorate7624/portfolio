@@ -45,6 +45,7 @@ import latale_1q_main from "./latale_1q_main.png";
 import latale_1q_update from "./latale_1q_update.png";
 import cls_main from "./cls_main.png";
 import sea_aug from "./sea_aug.png";
+import chatbot from "./chatbot.png";
 import actozsoft from "./tech/actozsoft.png";
 
 export {
@@ -91,5 +92,6 @@ export {
   latale_1q_update,
   cls_main,
   sea_aug,
+  chatbot,
   actozsoft,
 };
