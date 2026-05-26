@@ -33,6 +33,7 @@ import {
   graduation,
   latale_main,
   latale_1q_main,
+  latale_may_main,
   latale_1q_update,
   cls_main,
   sea_aug,
@@ -251,8 +252,8 @@ const projects = [
     act: true,
   },
   {
-    name: "라테일 2026년 1분기 이벤트 페이지",
-    url: "https://www.latale.com/event/2026/1q-main/",
+    name: "라테일 2026년 5월 메인 이벤트 페이지",
+    url: "https://www.latale.com/event/2026/may-main/",
     description: `내용: Vue 기반 이벤트 페이지 구축, 사용자 참여형 인터랙션 UI 개발, API 연동, 상태 처리 및 애니메이션 구현을 수행했으며, 레거시 코드 개선과 공통 구조 정비를 통해 유지보수성과 개발 생산성을 향상
 프로젝트 성과: 
   - 이미지 포맷(jpg/png)를 webP로 변환하여 페이지 로딩 성능 개선(약 10배 이상 빨라짐)`,
@@ -274,7 +275,7 @@ const projects = [
         color: "jquery-text",
       },
     ],
-    image: latale_1q_main,
+    image: latale_may_main,
     act: true,
   },
   {
