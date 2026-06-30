@@ -35,6 +35,8 @@ import {
   latale_1q_main,
   latale_may_main,
   latale_1q_update,
+  latale_2q1_update,
+  latale_update_roadmap,
   cls_main,
   sea_aug,
   actozsoft,
@@ -252,8 +254,8 @@ const projects = [
     act: true,
   },
   {
-    name: "라테일 2026년 5월 메인 이벤트 페이지",
-    url: "https://www.latale.com/event/2026/may-main/",
+    name: "라테일 2026년 업데이트 로맵 페이지",
+    url: "https://www.latale.com/event/2026/update-roadmap/",
     description: `내용: Vue 기반 이벤트 페이지 구축, 사용자 참여형 인터랙션 UI 개발, API 연동, 상태 처리 및 애니메이션 구현을 수행했으며, 레거시 코드 개선과 공통 구조 정비를 통해 유지보수성과 개발 생산성을 향상
 프로젝트 성과: 
   - 이미지 포맷(jpg/png)를 webP로 변환하여 페이지 로딩 성능 개선(약 10배 이상 빨라짐)`,
@@ -275,12 +277,12 @@ const projects = [
         color: "jquery-text",
       },
     ],
-    image: latale_may_main,
+    image: latale_update_roadmap,
     act: true,
   },
   {
-    name: "라테일 2026년 1분기 업데이트 안내 페이지",
-    url: "https://www.latale.com/event/2026/1q-update/",
+    name: "라테일 2026년 2분기 1차 업데이트 안내 페이지",
+    url: "https://www.latale.com/event/2026/2q-update1/",
     description: `내용: PC/모바일 환경에 맞춘 적응형 구조로 페이지를 구축했으며, 디바이스별 UI 최적화 및 인터랙션 구현을 수행. 또한 업데이트 콘텐츠를 효과적으로 전달할 수 있도록 애니메이션 효과와 시각적 요소를 적용하고, 운영 및 유지보수를 고려한 구조로 개발
 프로젝트 성과: 
   - 유지보수 효율성을 높이기 위해 PC/모바일로 분리되었던 프로젝트 통합
@@ -303,7 +305,7 @@ const projects = [
         color: "jquery-text",
       },
     ],
-    image: latale_1q_update,
+    image: latale_2q1_update,
     act: true,
   },
   {

@@ -43,7 +43,9 @@ import countryinfo from "./country-info.png";
 import latale_main from "./latale_main.png";
 import latale_1q_main from "./latale_1q_main.png";
 import latale_may_main from "./latale_may_main.png";
+import latale_update_roadmap from "./latale_update_roadmap.png";
 import latale_1q_update from "./latale_1q_update.png";
+import latale_2q1_update from "./latale_2q1_update.png";
 import cls_main from "./cls_main.png";
 import sea_aug from "./sea_aug.png";
 import chatbot from "./chatbot.png";
@@ -91,7 +93,9 @@ export {
   latale_main,
   latale_1q_main,
   latale_may_main,
+  latale_update_roadmap,
   latale_1q_update,
+  latale_2q1_update,
   cls_main,
   sea_aug,
   chatbot,
